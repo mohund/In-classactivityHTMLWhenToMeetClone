@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When2Meet</title>
+</head>
+<body>
+    <h1>When2Meet</h1>
+    <nav>
+        
+        <ul> 
+            <li><a href="#CreateEvent">Create Event</a></li> 
+            <li><a href="#InputAvailability">Select Availability</a></li> 
+            <li><a href="#ViewResults">View Results</a></li> 
+            <li><a href="#SignUp">Sign Up</a></li> 
+        </ul>
+      
+    </nav>
+    <div id="CreateEvent">
+        <h2>Create Event</h2>
+        <label for="Eventname">Event Name:</label> <input type="text" id="Eventname" name="Eventname"><label for="EventDescrip"> Event Description :</label> <textarea name="comment" form="usrform"></textarea>
+        <label for="SartDate" >Start Date:</label> <input type="date" id="StartDate" name="StartDate"> <label for="EndDate">End Date:</label> <input type="date" id="EndDate" name="EndDate">
+        <label for="StartTime">Time Increment:</label> <select name="TimeIncrement" id="TimeIncrement">
+            <option value="15">15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="60">1 hour</option>
+        </select>
+        <button>Create Event</button>
+</div>
+
+<div id="InputAvailability">
+    <h2>Input Availability</h2>
+    <table >
+        
+        <tr>
+            <th colspan="2">Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td colspan="2">9:00 AM</td>
+            <td><input type="checkbox" name="" id=""></td>
+            <td><input type="checkbox" name="" id=""></td>
+            <td><input type="checkbox" name="" id=""></td>
+            <td><input type="checkbox" name="" id=""></td>
+            <td><input type="checkbox" name="" id=""></td>
+        </tr>
+    </table>
+    <button>Submit Availability</button>
+</div>
+<div id="ViewResults">
+    <h2>View Results</h2>
+    <table>
+        <tr>
+            <th colspan="2">Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td colspan="2">9:00 AM</td>
+            <td>3 available</td>
+            <td>2 available</td>
+            <td>4 available</td>
+            <td>1 available</td>
+            <td>5 available</td>
+
+        </tr>
+        
+    </table>
+    </div>
+    <br>
+    <label for="ShareableLink">Shareable Link: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a></label>
+    <div id="SignUp">
+
+        <h2>Sign Up</h2>
+        <label for="Username">Username:</label> <input type="text" name="Name" id="Name" >
+        <label for="Email">Email:</label> <input type="email" name="Email" id="Email" >
+        <label for="Password">Password:</label> <input type="password" name="Password" id="Password">
+        <button>Sign Up</button>
+    </div>
+
+    <footer>
+        <br>
+     &copy; 2024 WhenToMeet. All rights reserved.
+    </footer>
+</body>
+</html>
